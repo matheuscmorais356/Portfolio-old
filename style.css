@@ -97,6 +97,40 @@ button {
 
 /* Scrollbar */
 
+/* technologies pills */
+.technologies {
+  display: flex;
+  gap: 2rem;
+  justify-content: center;
+  align-items: center;
+}
+
+.technologies > p{
+  padding: 1rem;
+  border-radius: 1.5rem;
+  color: black;
+  font-weight: 700;
+}
+
+.technologies .pill_JavaScript{
+  border: solid .1rem var(--color-js);
+  color: var(--color-js);
+}
+
+.technologies .pill_HTML{
+  border: solid .1rem var(--color-html);
+  color: var(--color-html);
+}
+
+.technologies .pill_CSS{
+  border: solid .1rem var(--color-css);
+  color: var(--color-css);
+}
+
+.technologies .pill_Python {
+  border: solid .1rem var(--color-python);
+  color: var(--color-python);
+}
 
 
 /* Navigation */
@@ -250,6 +284,131 @@ button {
 #home header .professional-medias > a:hover > svg path[fill="#fff"]{
   fill: var(--black);
 }
+
+
+/* about */
+
+#about {
+  background: var(--dark-gray);
+  color: var(--white);
+}
+
+#about .wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+#about .wrapper header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#about .wrapper .content {
+  display: flex;
+  justify-content: center;
+
+  gap: 2.5rem;
+  padding: 2.5rem;
+
+  border-radius: 1.5rem;
+  background: var(--dark-blue);
+}
+
+#about .wrapper .content .about_image{
+  width: 30rem;
+  height: 30rem;
+}
+
+#about .wrapper .content .about_image img {
+  width: 100%;
+  height: 100%;
+  border-radius: 0 1rem 1rem 0;
+  border-left: .5rem solid var(--primary-color);
+}
+
+#about .wrapper .content .description {
+  width: 80%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+
+#about .wrapper .content .description p,
+#about .wrapper .content .description h3 {
+  text-align: justify;
+  line-height: 1.5;
+}
+
+#about  .description .header_description h3 {
+  font-size: 2rem;
+  width: 60rem;
+  padding-bottom: .5rem;
+  border-bottom: .2rem solid var(--primary-color);
+}
+
+#about  .description .footer_description {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+#about  .description .footer_description .skills {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+#about  .description .footer_description .skills h4 {
+  color: var(--primary-color);
+  text-align: left;
+}
+
+#about  .description .footer_description .skills .technologies p {
+  transition: .2s ease-in-out;
+}
+
+#about  .description .footer_description .skills .technologies p:hover{
+  transform: scale(1.1);
+  filter: brightness(1.1);
+}
+
+#about  .description .footer_description button {
+  width: 15rem;
+  padding: 1.5rem;
+  background: transparent;
+  border: .2rem solid var(--primary-color);
+  border-radius: 1.5rem;
+  color: var(--white);
+  font-weight: 700;
+  font-size: 1.8rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  transition: background .2s ease-in-out;
+}
+
+#about .description .footer_description button svg {
+  width: 3rem;
+}
+
+#about .description .footer_description button:hover {
+  background: var(--primary-color);
+  color: var(--black);
+}
+
+#about .description .footer_description button:hover svg path[fill="#fff"] {
+  fill: var(--black);
+}
+
+
+
+
 
 
 
