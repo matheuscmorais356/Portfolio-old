@@ -1,0 +1,255 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+}
+
+:root {
+  
+  --primary-color: hsl(175, 100%, 50%);
+  --dark-blue: hsl(225, 59%, 11%);
+  --bg-card-project: hsla(225, 58%, 11%, 0.95);
+  --dark-gray: hsl(225, 40%, 18%);
+  --gray: hsl(213, 30%, 32%);
+  --light-gray: hsl(187, 37%, 83%);
+  --very-light-gray: hsl(182, 82%, 93%);
+
+  --color-js:hsl(53, 93%, 54%);
+  --color-html:hsl(18, 88%, 55%); 
+  --color-css: hsl(198, 71%, 53%);
+  --color-python: hsl(206, 59%, 59%);
+  
+  --white: #fff;
+  --black: #000;
+
+  --nav-height: 7.2rem;
+}
+
+html {
+  font-size: 62.5%;
+  scroll-behavior: smooth;
+}
+
+html,
+body {
+  width: 100%;
+  height: 100%;
+}
+
+body {
+  font-family: 'Roboto Mono', monospace;
+  font-size: 1.6rem;
+  text-align: center;
+
+  color: var(--white);
+}  
+
+/* Geral */
+
+section {
+  padding-block: calc(5rem + var(--nav-height)) ;
+  width: 100%;
+  height: 100%;
+}
+
+.wrapper {
+  width: 100%;
+  height: 100%;
+  margin-inline: auto;
+  padding-inline: 10rem;
+}
+
+.wrapper header h2 {
+  font-size: 3rem;
+}
+
+.wrapper .content {
+  margin-top: 3rem;
+}
+
+ul {
+  list-style: none;
+}
+
+
+a,
+button {
+  color: var(--white);
+  cursor: pointer;
+}
+
+/* Geral */
+
+/* Scrollbar */
+
+::-webkit-scrollbar {
+  width: 1rem;
+}
+
+::-webkit-scrollbar-track {
+  background: var(--dark-blue);
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--primary-color);
+}
+
+/* Scrollbar */
+
+
+
+/* Navigation */
+#navigation {
+  width: 100%;
+  height: var(--nav-height);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: fixed;
+  z-index: 100;
+  
+  padding-inline: 10rem;
+  
+  background: var(--dark-blue);
+  border-bottom: .1rem solid var(--dark-gray);
+}
+
+#navigation .logo {
+  width: 25rem;
+}
+
+#navigation ul {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 2.5rem;
+}
+
+#navigation ul li a::after {
+  content:'';
+  width: 0;
+  height: .2rem;
+  background: var(--primary-color);
+
+  position: relative;
+  bottom: -2rem;
+  left: -0.5rem;
+  display: block;
+
+  transition: width .2s;
+}
+
+
+#navigation ul li a:hover::after {
+  padding-inline: 0.8rem;
+  width: 100%;
+}
+
+/* Navigation */
+
+/* Home */
+#home {
+  background: var(--dark-blue);
+  position: relative;
+  height: 100%;
+}
+
+#home .wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+#home .wrapper .content {
+  width: 50%;
+}
+
+#home .wrapper .content > img {
+  width: 100%;
+  height: 100%;
+}
+
+#home .wrapper header {
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+}
+
+#home header .apresentation {
+  text-align: left;
+}
+
+#home header .apresentation h1 {
+  font-size: 4.5rem;
+  color: var(--primary-color);
+  padding-right: 1rem;
+  animation: blinkCursor .5s steps(40) infinite normal, typing 4s steps(40) 1s normal;
+  white-space: nowrap;
+  overflow: hidden;
+}
+
+@keyframes blinkCursor{
+  from {
+    border-right:  2px solid rgba( 255, 255, 255, .75);
+  }
+  to {
+    border-right:  transparent;
+  }
+}
+
+@keyframes typing {
+  from {
+    width: 0;
+  }
+  to {
+    width: 100%;
+  }
+}
+
+#home header .apresentation h3 {
+  font-size: 3rem;
+}
+
+#home header .professional-medias {
+  width: 100%;
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  gap: 2rem;
+}
+
+#home header .professional-medias > a {
+  width: 25rem;
+  font-weight: 700;
+  font-size: 2rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  gap: 1rem;
+  padding: 1rem;
+
+  border: solid .2rem var(--primary-color);
+  border-radius: 1.5rem;
+
+  transition: background .2s ease-in-out;
+}
+
+#home header .professional-medias > a:hover {
+  background-color: var(--primary-color);
+  color: var(--black);
+}
+
+#home header .professional-medias > a > svg{
+  width: 2.5rem;
+  height: auto;
+  transition: .2s ease-in-out;
+}
+
+#home header .professional-medias > a:hover > svg path[fill="#fff"]{
+  fill: var(--black);
+}
+
+
+
