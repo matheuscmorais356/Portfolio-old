@@ -509,7 +509,201 @@ button {
 }
 
 
+/* Contact */
 
+#contact {
+  background: var(--dark-gray);
+}
+
+#contact .wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+#contact .wrapper header {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: start;
+  gap: 5rem;
+  padding: 3rem;
+  background: var(--dark-blue);
+  border-radius: 1rem 0 0 1rem;
+}
+
+#contact .wrapper header .contacts{
+  display: flex;
+  flex-direction: column;
+  gap: 2.5rem;
+}
+
+#contact .wrapper header .contacts div{
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+  font-size: 1.8rem;
+  font-weight: 700;
+}
+
+#contact .wrapper header .contacts div svg{
+  width: 3rem;
+}
+
+#contact .wrapper .content {
+  width: 100%;
+  height: 100%;
+  padding: 3rem;
+  margin: 0;
+  background: var(--gray);
+  border-radius: 0 1rem 1rem 0;
+}
+
+#contact .wrapper .content form {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 3rem;
+}
+
+#contact .content form .input_field {
+  position: relative;
+  width: 100%;
+}
+
+#contact .content form .input_field input{
+  width: 100%;
+  height: 5rem;
+  background: transparent;
+  border: none;
+  outline: none;
+  font-size: 1.8rem;
+  font-weight: 600;
+  border-bottom: solid .3rem var(--very-light-gray);
+  color: var(--white);
+  transition: .25s ease-in-out;;
+}
+
+#contact .content form .input_field input:hover{
+  border-bottom: solid .3rem var(--primary-color);
+}
+
+#contact .content form .input_field input:-webkit-autofill {
+  -webkit-text-fill-color: var(--white) !important;
+  -webkit-box-shadow: 0 0 0 3rem var(--gray) inset;
+}
+
+#contact .content form .input_field input:focus,
+#contact .content form .input_field input:not(:placeholder-shown){
+  border-bottom: solid .3rem var(--primary-color);
+}
+
+#contact .content form .input_field label {
+  position: absolute;
+  top: 0;
+  left: 0;
+  transition: .25s ease-in-out;
+  transform: translateY(1.8rem);
+  color: var(--light-gray);
+}
+
+#contact .content form .input_field input:focus ~ label,
+#contact .content form .input_field input:not(:placeholder-shown) ~ label{
+  transform: translateY(-1.8rem) scale(1.1);
+  color: var(--primary-color)
+}
+
+
+#contact .content form .input_field input::placeholder{
+  color: transparent;
+}
+
+#contact .content form .button_form {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+#contact .content form .button_form p{
+  color: var(--primary-color);
+  opacity: 0;
+  visibility: hidden;
+
+  transform: translateY(50%);
+  transition: .2s
+}
+
+#contact .content form .button_form p.show {
+  opacity: 1;
+  visibility: visible;
+  transform: translateY(0);
+}
+
+#contact .content form .button_form button {
+  width: 25rem;
+  height: 5rem;
+  background-color: transparent;
+  font-weight: 700;
+  font-size: 1.8rem;
+  border: solid .3rem var(--very-light-gray);
+  border-radius: 1.5rem;
+  transition: background .2s ease-in-out;
+}
+
+#contact .content form .button_form button:hover {
+  background: var(--primary-color);
+  border: none;
+  color: var(--black);
+}
+
+/* Footer */
+
+footer {
+  width: 100%;
+  background: var(--dark-blue);
+  padding: 3rem;
+}
+
+/* Back top top */
+
+#backToTop {
+  position: fixed;
+  bottom: 1rem;
+  right: 2.5rem;
+
+  opacity: 0;
+  visibility: hidden;
+
+  padding: 1rem;
+
+  background: var(--primary-color);
+  border-radius: 100%;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  transform: translateY(100%);
+  transition: .2s;
+
+}
+
+#backToTop.show {
+  opacity: 1;
+  visibility: visible;
+  transform: translateY(0);
+}
+
+#backToTop svg {
+  width: 2rem;
+  height: 2rem;
+}
 
 
 
