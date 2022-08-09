@@ -1,0 +1,239 @@
+@media (max-width: 1100px) {
+  #home .wrapper {
+    justify-content: center;
+    align-items: center;
+  }
+
+  #home .wrapper .content{
+    display: none;
+  }
+
+  #contact {
+    height: auto;
+  }
+
+  #contact .wrapper {
+    flex-direction: column-reverse;
+  }
+
+  #contact .wrapper  header {
+    align-items: center;
+    padding: 4rem;
+    border-radius: 0 0 1rem 1rem;
+  }
+
+  #contact header  .contacts{
+    width: 100%;
+    align-items: start;
+  }
+
+  #contact .wrapper .content {
+    padding: 4rem;
+    border-radius: 1rem 1rem 0 0;
+  }
+}
+
+@media (max-width: 1000px) {
+
+  /* Menu Expanded */
+  #navigation .menu .open_menu {
+    display: block;
+  }
+
+  #navigation .menu ul {
+    display: none;
+  }
+
+  body.menu_expanded {
+    overflow: hidden;
+  }
+
+  body.menu_expanded > :not(nav) {
+    visibility: hidden;
+    opacity: 0;
+  }
+
+  .menu {
+    transform: translateY(100%);
+  }
+
+  body.menu_expanded #navigation .menu {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background: var(--dark-gray);
+    padding-top: var(--nav-height);
+    transition: transform 300ms;
+    transform: translateY(0);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 5rem;
+  }
+
+  body.menu_expanded #navigation .menu .open_menu {
+    display: none;
+  }
+
+  body.menu_expanded #navigation .menu .close_menu {
+    display: block;
+  }
+
+  body.menu_expanded #navigation .menu .professional_medias-menu {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 3rem;
+  }
+
+  body.menu_expanded #navigation .menu ul {
+    display: block;
+    display: flex;
+    flex-direction: column;
+    gap: 5rem;
+    margin-top: 6rem;
+  }
+
+  body.menu_expanded #navigation .menu ul li a{
+    color: var(--white);
+    font-weight: 700;
+    font-size: 2.4rem;
+    line-height: 3.1rem;
+  }
+
+  body.menu_expanded #navigation .logo {
+    position: relative;
+    z-index: 10;
+  }
+
+  /* About */
+
+  #about .wrapper .content {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  #about .content .about_image {
+    height: 30rem;
+  }
+
+  #about  .description .footer_description {
+    flex-direction: column;
+    justify-content: center;
+    align-items: end;
+    gap: 2rem;
+  }
+
+  #about  .description .footer_description .skills {
+    width: 100%;
+    align-items: start;
+  }
+
+  /* Project Cards */
+
+  #projects {
+    height: calc(100% + 11rem);
+  }
+
+  #projects .wrapper .content * {
+    flex-direction: initial;
+    margin: 0;
+    position: initial;
+    transform: scale(1);
+    background: initial;
+    filter: initial;
+  }
+
+  #projects .wrapper .content .card_project{
+    width: 40rem;
+    height: min(50rem, 100%);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  #projects .content .card_project .project_image{
+    height: 50%;
+    width: 100%;
+  }
+
+  #projecs .content .card_project .prroject_image img {
+    width: 100%;
+    height: 100%;
+  }
+  
+
+  #projects .content .card_project .project_description {
+    height: 50%;
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    padding: 0;
+  }
+  
+
+}
+
+@media (max-width: 700px) {
+
+  #home header .apresentation h3 {
+    font-size: 2.5rem;
+  }
+
+  #about .wrapper .content {
+    align-items: center;
+  }
+
+  #about .description p {
+    text-align: left;
+  }
+
+  #about .description .footer_description {
+    align-items: start;
+    gap: 2.5rem;
+  }
+}
+
+
+@media (max-width: 600px) {
+
+  #home .wrapper header .apresentation h1{
+    font-size: 2.8rem;
+  }
+
+  #home .wrapper header .apresentation h3{
+    font-size: 2.2rem;
+  }
+  
+  #about .wrapper .content {
+    padding: 0;
+    background: transparent;
+  }
+
+  #projects .card_project .project_description p {
+    font-size: 1.4rem;
+  }
+
+  #projects .card_project .project_description h4 {
+    font-size: 1.6rem;
+  }
+
+  #contact .wrapper {
+    gap: 2rem;
+  }
+
+  #contact .wrapper header,
+  #contact .wrapper .content {
+    padding: 0;
+    background: transparent;
+    text-align: left; 
+  }
+
+  #contact .wrapper header .contacts div{
+    font-size: 1.6rem;
+  }
+}
+

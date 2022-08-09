@@ -4,15 +4,15 @@ const projects = [
     image: './assets/tipCalculator.jpg',
     alt: 'Imagem do projeto TipCalculate',
     description: 'Esta é a solução para o desafio do Frontend Mentor. O desafio foi criar uma calculadora de gorjeta.',
-    technologies: ['JavaScript', 'HTML', 'CSS'],
+    technologies: ['JS', 'HTML', 'CSS'],
     link: 'https://matheuscmorais356.github.io/TipCalculator/'
   },
   {
     name: 'SingupForm',
     image: './assets/singupForm.PNG',
     alt: 'Imagem do projeto SingupFrom',
-    description: 'Esta é a solução para o desafio do Frontend Mentor. O objetivo do projeto é fazer o tratamento de dados através do formulário, verificando se todos os campos estão preenchido e seguindo o padrão de escrita exigido.',
-    technologies: ['JavaScript', 'HTML', 'CSS'],
+    description: 'Esta é a solução para o desafio do Frontend Mentor. O objetivo do projeto é fazera validação do formulario.',
+    technologies: ['JS', 'HTML', 'CSS'],
     link: 'https://matheuscmorais356.github.io/SignupForm/'
   },
   {
@@ -20,7 +20,7 @@ const projects = [
     image: './assets/faq.png',
     alt: 'Imagem do projeto FAQ',
     description: 'Esse é um projeto desenvolvido durante a Mapa Dev Week do Dev em Dobro.',
-    technologies: ['JavaScript', 'HTML', 'CSS'],
+    technologies: ['JS', 'HTML', 'CSS'],
     link: 'https://matheuscmorais356.github.io/FAQ/'
   },
   {
@@ -28,11 +28,21 @@ const projects = [
     image: './assets/summaryCard.png',
     alt: 'Imagem do projeto SummaryCard',
     description: 'Esta é uma solução para o desafio do cartão de resumo do pedido no Frontend Mentor.',
-    technologies: ['JavaScript', 'HTML', 'CSS'],
+    technologies: ['JS', 'HTML', 'CSS'],
     link: 'https://matheuscmorais356.github.io/summaryCard/'
-  }
+  },
 ]
 const formButtom = document.querySelector('.button_form > button')
+
+// Menu
+
+function openMenu() {
+  document.body.classList.add('menu_expanded')
+}
+
+function closeMenu() {
+  document.body.classList.remove('menu_expanded')
+}
 
 
 // Back to top button 

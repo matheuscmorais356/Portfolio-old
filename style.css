@@ -48,16 +48,17 @@ body {
 /* Geral */
 
 section {
-  padding-block: calc(5rem + var(--nav-height)) ;
+  padding-top: calc(5rem + var(--nav-height)) ;
+  padding-bottom: 5rem;
   width: 100%;
-  height: 100%;
+  min-height: 100%;
 }
 
 .wrapper {
-  width: 100%;
+  width: min(125rem, 100%);
   height: 100%;
   margin-inline: auto;
-  padding-inline: 10rem;
+  padding-inline: 2.4rem;
 }
 
 .wrapper header h2 {
@@ -77,6 +78,12 @@ a,
 button {
   color: var(--white);
   cursor: pointer;
+}
+
+img,
+svg {
+  width: 100%;
+  height: 100%;
 }
 
 /* Geral */
@@ -101,8 +108,9 @@ button {
 .technologies {
   display: flex;
   gap: 2rem;
-  justify-content: center;
+  justify-content: start;
   align-items: center;
+  flex-wrap: wrap;
 }
 
 .technologies > p{
@@ -112,7 +120,7 @@ button {
   font-weight: 700;
 }
 
-.technologies .pill_JavaScript{
+.technologies .pill_JS{
   border: solid .1rem var(--color-js);
   color: var(--color-js);
 }
@@ -135,32 +143,72 @@ button {
 
 /* Navigation */
 #navigation {
-  width: 100%;
+  width: 100vw;
   height: var(--nav-height);
   display: flex;
   align-items: center;
   justify-content: space-between;
   position: fixed;
   z-index: 100;
-  
-  padding-inline: 10rem;
-  
+
   background: var(--dark-blue);
   border-bottom: .1rem solid var(--dark-gray);
 }
 
-#navigation .logo {
-  width: 25rem;
+#navigation .wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
-#navigation ul {
+#navigation .logo {
+  font-size: 3rem;
+  color: var(--primary-color);
+}
+
+#navigation .menu button {
+  display: none;
+  background: transparent;
+  width: 5rem;
+  height: 5rem;
+  border: none;
+}
+
+#navigation .menu .close_menu {
+  position: fixed;
+  top: 1rem;
+  right: 2rem;
+}
+
+#navigation .menu .open_menu {
+  position: fixed;
+  top: -2.5rem;
+  right: 0;
+}
+
+#navigation .menu .professional_medias-menu {
+  width: 100%;
+  display: none;
+}
+
+#navigation .menu .professional_medias-menu > a{
+  width: 3rem;
+}
+
+
+
+#navigation .menu ul {
   display: flex;
   align-items: center;
   justify-content: center;
   gap: 2.5rem;
 }
 
-#navigation ul li a::after {
+#navigation .menu ul a:hover {
+  color: var(--primary-color);
+}
+
+#navigation .menu ul li a::after {
   content:'';
   width: 0;
   height: .2rem;
@@ -175,7 +223,7 @@ button {
 }
 
 
-#navigation ul li a:hover::after {
+#navigation .menu ul li a:hover::after {
   padding-inline: 0.8rem;
   width: 100%;
 }
@@ -184,7 +232,7 @@ button {
 
 /* Home */
 #home {
-  background: var(--dark-blue);
+  background: var(--dark-blue );
   position: relative;
   height: 100%;
 }
@@ -195,19 +243,11 @@ button {
   justify-content: space-between;
 }
 
-#home .wrapper .content {
-  width: 50%;
-}
-
-#home .wrapper .content > img {
-  width: 100%;
-  height: 100%;
-}
-
 #home .wrapper header {
   display: flex;
   flex-direction: column;
   gap: 3rem;
+  width: 100%;
 }
 
 #home header .apresentation {
@@ -215,37 +255,16 @@ button {
 }
 
 #home header .apresentation h1 {
-  font-size: 4.5rem;
-  color: var(--primary-color);
+  font-size: 3.4rem;
   padding-right: 1rem;
-  animation: blinkCursor .5s steps(40) infinite normal, typing 4s steps(40) 1s normal;
-  white-space: nowrap;
-  overflow: hidden;
-}
-
-@keyframes blinkCursor{
-  from {
-    border-right:  2px solid rgba( 255, 255, 255, .75);
-  }
-  to {
-    border-right:  transparent;
-  }
-}
-
-@keyframes typing {
-  from {
-    width: 0;
-  }
-  to {
-    width: 100%;
-  }
+  color: var(--primary-color);
 }
 
 #home header .apresentation h3 {
   font-size: 3rem;
 }
 
-#home header .professional-medias {
+.professional_medias {
   width: 100%;
   display: flex;
   justify-content: start;
@@ -253,7 +272,7 @@ button {
   gap: 2rem;
 }
 
-#home header .professional-medias > a {
+.professional_medias > a {
   width: 25rem;
   font-weight: 700;
   font-size: 2rem;
@@ -270,19 +289,25 @@ button {
   transition: background .2s ease-in-out;
 }
 
-#home header .professional-medias > a:hover {
+.professional_medias > a:hover {
   background-color: var(--primary-color);
   color: var(--black);
 }
 
-#home header .professional-medias > a > svg{
+.professional_medias > a > svg{
   width: 2.5rem;
   height: auto;
   transition: .2s ease-in-out;
 }
 
-#home header .professional-medias > a:hover > svg path[fill="#fff"]{
+.professional_medias > a:hover > svg path[fill="#fff"]{
   fill: var(--black);
+}
+
+#home .wrapper .content {
+  width: 100%;
+  padding: 2rem;
+  
 }
 
 
@@ -318,19 +343,22 @@ button {
 }
 
 #about .wrapper .content .about_image{
-  width: 30rem;
+  width: min(40rem, 100%);
   height: 30rem;
 }
 
 #about .wrapper .content .about_image img {
-  width: 100%;
-  height: 100%;
   border-radius: 0 1rem 1rem 0;
   border-left: .5rem solid var(--primary-color);
+  transition: transform .2s 
+}
+
+#about .wrapper .content .about_image img:hover {
+  transform: scale(1.1);
 }
 
 #about .wrapper .content .description {
-  width: 80%;
+  width: 100%;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -339,20 +367,30 @@ button {
 
 #about .wrapper .content .description p,
 #about .wrapper .content .description h3 {
-  text-align: justify;
   line-height: 1.5;
 }
 
+#about .wrapper .content .description p {
+  text-align: justify;
+}
+
+#about .wrapper .content .description h3 {
+  text-align: left;
+}
+
+
 #about  .description .header_description h3 {
   font-size: 2rem;
-  width: 60rem;
+  width: 80%;
   padding-bottom: .5rem;
+  margin-bottom: 1rem;
   border-bottom: .2rem solid var(--primary-color);
 }
 
 #about  .description .footer_description {
   width: 100%;
   display: flex;
+  margin-top: 1.5rem;
   justify-content: space-between;
   align-items: center;
 }
@@ -409,6 +447,7 @@ button {
 /* Projects */
 
 #projects {
+  height: 100%;
   background: var(--dark-blue);
 }
 
@@ -443,8 +482,8 @@ button {
   border-radius: 1.5rem;
   box-shadow: 5px 5px 10px var(--gray);
 
-  width: 45rem;
-  height: 30rem;
+  width: 50rem;
+  height: 35rem;
   position: relative;
   display: flex;
   flex-direction: column;
@@ -463,20 +502,21 @@ button {
   filter: brightness(1.1);
 }
 
-#projects .wrapper .content .card_project .project_image {
+#projects .card_project .project_image {
   width: 100%;
   height: 100%;
 }
 
-#projects .wrapper .content .card_project .project_image img{
+#projects .card_project .project_image img{
   width: 100%;
   height: 100%;
   border-radius: 1rem;
 }
 
-#projects .wrapper .content .card_project .project_description {
-  opacity: 0;
+#projects .card_project .project_description {
   position: absolute;
+  top: 0;
+  left: 0;
   width: 100%;
   height: 100%;
   border-radius: 1.5rem;
@@ -487,21 +527,24 @@ button {
   gap: 2rem;
   background: var(--bg-card-project);
   text-align: justify;
-  transition: .2s ease;
-   
+  transform: scale(0);
+  transition: transform .3s ease-in-out;
+  transform-origin: right;
 }
 
-#projects .wrapper .content .card_project:hover .project_description {
-  opacity: 1;
+#projects .card_project:hover .project_description {
+  transform: scale(1);
+  transition: transform .3s ease-in-out;
+  transform-origin: left;
 }
 
-#projects .wrapper .content .card_project .project_description h4 {
+#projects .card_project .project_description h4 {
   color: var(--primary-color);
   font-weight: 700;
   font-size: 1.8rem
 }
 
-.content .card_project .project_description .technologies {
+#project .project_description .technologies {
   display: flex;
   justify-content: start;
   gap: 2rem;
@@ -512,12 +555,14 @@ button {
 /* Contact */
 
 #contact {
+  height: 100%;
   background: var(--dark-gray);
 }
 
 #contact .wrapper {
+  height: 100%;
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   align-items: center;
 }
 
@@ -555,6 +600,11 @@ button {
 #contact .wrapper .content {
   width: 100%;
   height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: start;
+  gap: 2rem;
   padding: 3rem;
   margin: 0;
   background: var(--gray);
@@ -563,7 +613,6 @@ button {
 
 #contact .wrapper .content form {
   width: 100%;
-  height: 100%;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -586,24 +635,41 @@ button {
   font-weight: 600;
   border-bottom: solid .3rem var(--very-light-gray);
   color: var(--white);
-  transition: .25s ease-in-out;;
+  transition: .25s ease-in-out;
 }
 
-#contact .content form .input_field input:hover{
+#contact .content form .input_field textarea {
+  height: 8rem;
+  outline: none; 
+  background: transparent;
+  width: 100%;
+  border: none;
+  resize: none;
+  font-size: 1.8rem;
+  font-weight: 600;
+  border-bottom: solid .3rem var(--very-light-gray);
+  color: var(--white);
+  transition: .25s ease-in-out;
+}
+
+#contact .content form .input_field input:hover,
+#contact .content form .input_field textarea:hover{
   border-bottom: solid .3rem var(--primary-color);
 }
 
-#contact .content form .input_field input:-webkit-autofill {
+#contact .content form .input_field input:-webkit-autofill{
   -webkit-text-fill-color: var(--white) !important;
   -webkit-box-shadow: 0 0 0 3rem var(--gray) inset;
 }
 
 #contact .content form .input_field input:focus,
-#contact .content form .input_field input:not(:placeholder-shown){
+#contact .content form .input_field textarea:focus,
+#contact .content form .input_field input:not(:placeholder-shown),
+#contact .content form .input_field textarea:valid {
   border-bottom: solid .3rem var(--primary-color);
 }
 
-#contact .content form .input_field label {
+#contact .input_field label {
   position: absolute;
   top: 0;
   left: 0;
@@ -612,14 +678,22 @@ button {
   color: var(--light-gray);
 }
 
-#contact .content form .input_field input:focus ~ label,
-#contact .content form .input_field input:not(:placeholder-shown) ~ label{
+#contact .input_field textarea ~ label {
+  top: -1rem;
+}
+
+#contact .input_field input:focus ~ label,
+#contact .input_field textarea:focus ~ label,
+#contact .input_field input:not(:placeholder-shown) ~ label,
+#contact .input_field textarea:valid ~ label {
   transform: translateY(-1.8rem) scale(1.1);
-  color: var(--primary-color)
+  color: var(--primary-color);
 }
 
 
-#contact .content form .input_field input::placeholder{
+
+#contact .input_field input::placeholder,
+#contact .input_field textarea::placeholder{
   color: transparent;
 }
 

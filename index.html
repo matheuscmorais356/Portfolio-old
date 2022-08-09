@@ -12,56 +12,61 @@
 
   <!-- styles -->
   <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="query.css">
 
   <title>Matheus Cardoso Morais</title>
 </head>
 <body>
   <nav id="navigation">
-    <a href="#home" >
-      <svg class="logo" version="1.0" xmlns="http://www.w3.org/2000/svg"
-      width="500.000000pt" height="500.000000pt" viewBox="0 0 500.000000 500.000000"
-      preserveAspectRatio="xMidYMid meet">
+    <div class="wrapper">
+      <a href="#home" class="logo">
+        &lt;/&gt
+      </a>
+  
+      <div class="menu">
+        <ul>
+          <li>
+            <a href="#home" onclick="closeMenu()">Início</a>
+          </li>
+          <li>
+            <a href="#about" onclick="closeMenu()">Sobre mim</a>
+          </li>
+          <li>
+            <a href="#projects" onclick="closeMenu()">Projetos</a>
+          </li>
+          <li>
+            <a href="#contact" onclick="closeMenu()">Contato</a>
+          </li>
+        </ul>
+  
+        <button class="open_menu" onclick="openMenu()">
+          <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M10 20H30" stroke="#00ffea" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+            <path d="M10 12H30" stroke="#00ffea" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+            <path d="M18 28L30 28" stroke="#00ffea" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+          </svg>
+        </button>
+  
+        <button class="close_menu" onclick="closeMenu()">
+          <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M30 10L10 30M10 10L30 30" stroke="#00ffea" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+          </svg>
+        </button>
 
-        <g transform="translate(0.000000,500.000000) scale(0.100000,-0.100000)"
-        fill="#00ffea" stroke="none">
-        <path d="M1730 2839 c-55 -17 -86 -45 -111 -101 -21 -46 -24 -68 -24 -174 0
-        -114 2 -123 30 -179 38 -74 83 -100 170 -100 63 1 129 16 158 37 15 11 16 18
-        5 44 l-11 31 -55 -19 c-76 -27 -149 -22 -173 12 -39 53 -47 245 -14 327 20 48
-        46 57 146 50 l87 -6 5 32 c3 18 2 36 -2 40 -12 13 -173 17 -211 6z"/>
-        <path d="M987 2833 c-3 -5 -8 -128 -12 -275 l-7 -268 46 0 46 0 1 228 1 227
-        52 -155 53 -155 49 -3 49 -3 50 161 50 160 3 -230 2 -230 46 0 46 0 -6 223
-        c-4 122 -9 246 -12 275 l-5 52 -59 0 c-57 0 -59 -1 -69 -32 -5 -18 -28 -93
-        -51 -167 -23 -73 -45 -129 -49 -125 -4 5 -29 80 -56 167 l-49 157 -57 0 c-32
-        0 -60 -3 -62 -7z"/>
-        <path d="M2107 2833 c-3 -5 -8 -128 -12 -275 l-7 -268 46 0 46 0 1 228 1 227
-        52 -155 53 -155 49 -3 49 -3 50 161 50 160 3 -230 2 -230 46 0 46 0 -6 223
-        c-4 122 -9 246 -12 275 l-5 52 -59 0 c-57 0 -59 -1 -69 -32 -5 -18 -28 -93
-        -51 -167 -23 -73 -45 -129 -49 -125 -4 5 -29 80 -56 167 l-49 157 -57 0 c-32
-        0 -60 -3 -62 -7z"/>
-        <path d="M2760 2588 c-45 -139 -85 -265 -90 -280 -8 -24 -5 -28 22 -37 17 -6
-        32 -10 33 -9 17 32 174 552 169 558 -5 4 -19 11 -31 14 -20 7 -26 -6 -103
-        -246z"/>
-        <path d="M770 2675 l-125 -125 122 -122 122 -122 26 24 26 24 -98 98 -98 98
-        100 100 100 100 -25 25 -25 25 -125 -125z"/>
-        <path d="M2940 2775 l-24 -26 97 -97 97 -97 -100 -100 -100 -100 25 -25 25
-        -25 120 120 c66 66 120 124 120 130 0 6 -53 63 -118 128 l-118 118 -24 -26z"/>
-        </g>
-      </svg>
-    </a>
-    <ul>
-      <li>
-        <a href="#home">Início</a>
-      </li>
-      <li>
-        <a href="#about">Sobre mim</a>
-      </li>
-      <li>
-        <a href="#projects">Projetos</a>
-      </li>
-      <li>
-        <a href="#contact">Contato</a>
-      </li>
-    </ul>
+        <div class="professional_medias-menu">
+          <a href="https://www.linkedin.com/in/matheus-cardoso356/">
+            <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" focusable="false" viewBox="0 0 12 12">
+              <path fill="#fff" d="M11 0a1 1 0 01.993.883L12 1v10a1 1 0 01-.883.993L11 12H1a1 1 0 01-.993-.883L0 11V1A1 1 0 01.883.007L1 0h10zm0 1H1v10h10V1zM7.742 4.63c1.502 0 1.78.988 1.78 2.273L9.52 9.52H8.04L8.037 7c-.01-.51-.098-1.065-.769-1.065-.723 0-.872.53-.888 1.109L6.378 9.52H4.897V4.75h1.422v.65h.02a1.56 1.56 0 011.403-.771zm-3.776.119V9.52H2.482V4.749h1.484zm-.741-2.372a.86.86 0 110 1.72.86.86 0 010-1.72z"/>
+            </svg>
+          </a>
+          <a href="https://github.com/matheuscmorais356" target="_blank">
+            <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" focusable="false" viewBox="0 0 12 12">
+              <path fill="#fff" d="M6 0a6 6 0 110 12A6 6 0 016 0zm0 .98C3.243.98 1 3.223 1 6a5.02 5.02 0 003.437 4.77.594.594 0 00.045.005c.203.01.279-.129.279-.25l-.007-.854c-1.39.303-1.684-.674-1.684-.674-.227-.58-.555-.734-.555-.734-.454-.312.034-.306.034-.306.365.026.604.288.708.43l.058.088c.446.767 1.17.546 1.455.418.046-.325.174-.546.317-.672-1.11-.127-2.277-.558-2.277-2.482 0-.548.195-.996.515-1.348l-.03-.085c-.064-.203-.152-.658.079-1.244l.04-.007c.124-.016.548-.013 1.335.522A4.77 4.77 0 016 3.408c.425.002.853.058 1.252.17.955-.65 1.374-.516 1.374-.516.272.692.1 1.202.05 1.33.32.35.513.799.513 1.347 0 1.93-1.169 2.354-2.283 2.478.18.155.34.462.34.93l-.006 1.378c0 .13.085.282.323.245A5.02 5.02 0 0011 6C11 3.223 8.757.98 6 .98z"/>
+            </svg>
+          </a>
+        </div>
+      </div>
+    </div>
   </nav>
 
   <!-- Home -->
@@ -69,11 +74,11 @@
     <div class="wrapper">
       <header>
           <div class="apresentation">
-            <h3>Olá! e sou</h3>
+            <h3>Olá! eu sou</h3>
             <h1> Matheus Cardoso Morais</h1>
             <h3>Desenvolvedor Front-end</h3>
           </div>
-          <div class="professional-medias">
+          <div class="professional_medias">
             <a href="https://www.linkedin.com/in/matheus-cardoso356/">
               <svg enable-background="new 0 0 512 512" id="Layer_1" version="1.1" viewBox="0 0 512 512" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
                 <g>
@@ -91,9 +96,8 @@
           </div>
       </header>
       <div class="content">
-        <img src="./assets/undraw_programming_re_kg9v.svg" alt="Ilustração de um homem mechendo em um computador">
+        <img src="./assets/undraw_programming_re_kg9v.svg" alt="">
       </div>
-    </div>
   </section>
 
   <!-- About -->
@@ -104,7 +108,7 @@
       </header>
       <div class="content">
         <div class="about_image">
-          <img src="" alt="">
+          <img src="./assets/myPhoto.jpg" alt="Foto Maheus Cardoso Morais">
         </div>
         <div class="description">
           <div class="header_description">
@@ -122,7 +126,7 @@
             <div class="skills">
               <h4>Minhas habilidades</h4>
               <div class="technologies">
-                <p class="pill_JavaScript">JavaScript</p>
+                <p class="pill_JS">JavaScript</p>
                 <p class="pill_HTML">HTML</p>
                 <p class="pill_CSS">CSS</p>
                 <p class="pill_Python">Python</p>
@@ -168,44 +172,42 @@
   <section id="contact">
     <div class="wrapper">
       <header>
-        <h2>Entre em contato</h2>
+        <h2>Informações para contato</h2>
         <div class="contacts">
           <div>
-            <svg version="1.1" baseProfile="tiny" id="Layer_1" xmlns:x="&ns_extend;" xmlns:i="&ns_ai;" xmlns:graph="&ns_graphs;" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:a="http://ns.adobe.com/AdobeSVGViewerExtensions/3.0/" x="0px" y="0px" width="42px" height="42px" viewBox="-0.5 0.5 42 42" xml:space="preserve">
-              <path fill="#fff" d="M40.5,31.5v-18c0,0-18.2,12.7-19.97,13.359C18.79,26.23,0.5,13.5,0.5,13.5v18c0,2.5,0.53,3,3,3h34 C40.029,34.5,40.5,34.061,40.5,31.5z M40.471,9.971c0-1.821-0.531-2.471-2.971-2.471h-34c-2.51,0-3,0.78-3,2.6l0.03,0.28 c0,0,18.069,12.44,20,13.12C22.57,22.71,40.5,10.1,40.5,10.1L40.471,9.971z"/>
+            <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" focusable="false" viewBox="0 0 12 12">
+              <g fill="none" stroke="#fff">
+                <rect width="11" height="9" x=".5" y="1.5" rx=".5" ry=".5"/>
+                <path stroke-linecap="round" d="M1 10l2.5-2.5M11 10L8.5 7.5M1 2l4.65 4.65a.5.5 0 00.71 0L11 2"/>
+              </g>
             </svg>
             <p>matheuscmorais356@gmail.com</p>
           </div>
           <div>
-            <svg id="Layer_1" style="enable-background:new 0 0 124 124;" version="1.1" viewBox="0 0 124 124" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><style type="text/css">
-              .st0{fill:#fff;}
-            </style><g id="XMLID_12_"><g id="XMLID_15_"><g id="XMLID_16_"><g id="XMLID_17_"><path class="st0" d="M102.4,70.7v28.5c0,0.7-0.6,1.3-1.3,1.3H86.4c-0.7,0-1.3-0.6-1.3-1.3V72.7      c0-7-2.5-11.8-8.8-11.8c-4.8,0-7.6,3.2-8.9,6.3c-0.5,1.1-0.6,2.7-0.6,4.2v27.8c0,0.7-0.6,1.3-1.3,1.3H50.9      c-0.7,0-1.3-0.6-1.3-1.3c0-7.1,0.2-41.4,0-49.4c0-0.7,0.6-1.3,1.3-1.3h14.7c0.7,0,1.3,0.6,1.3,1.3v6.1c0,0.1-0.1,0.1-0.1,0.2      h0.1v-0.2c2.3-3.5,6.4-8.6,15.6-8.6C93.9,47.3,102.4,54.8,102.4,70.7L102.4,70.7z M24,100.6h14.7c0.7,0,1.3-0.6,1.3-1.3V49.8      c0-0.7-0.6-1.3-1.3-1.3H24c-0.7,0-1.3,0.6-1.3,1.3v49.5C22.8,100,23.3,100.6,24,100.6z" id="XMLID_18_"/></g></g></g><g id="XMLID_13_"><circle class="st0" cx="30.9" cy="32.7" id="XMLID_14_" r="9.3"/></g></g>
-          </svg>
+            <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" focusable="false" viewBox="0 0 12 12">
+              <path fill="#fff" d="M11 0a1 1 0 01.993.883L12 1v10a1 1 0 01-.883.993L11 12H1a1 1 0 01-.993-.883L0 11V1A1 1 0 01.883.007L1 0h10zm0 1H1v10h10V1zM7.742 4.63c1.502 0 1.78.988 1.78 2.273L9.52 9.52H8.04L8.037 7c-.01-.51-.098-1.065-.769-1.065-.723 0-.872.53-.888 1.109L6.378 9.52H4.897V4.75h1.422v.65h.02a1.56 1.56 0 011.403-.771zm-3.776.119V9.52H2.482V4.749h1.484zm-.741-2.372a.86.86 0 110 1.72.86.86 0 010-1.72z"/>
+            </svg>
             <p>matheus-cardoso356</p>
           </div>
-          <div>
-            <svg enable-background="new 0 0 512 512" id="Layer_1" version="1.1" viewBox="0 0 512 512" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><g>
-                <path fill="#fff" d="M218.7,445.5c-6.6,0.7-12.2,1.4-17.8,2c-29.1,2.9-54.5-5-73.7-27.7c-6-7.1-9.4-16.3-14.5-24.2c-7.9-12.4-16-24.7-24.7-36.6   c-3-4.1-8.2-6.5-12.2-10c-1.3-1.1-1.7-3.2-2.6-4.9c1.8-0.7,3.5-1.9,5.3-2.1c23-2.1,39.2,8.5,50.5,27.6   c14.1,23.8,34.5,36.8,62.2,36.8c8,0,16-2.7,23.9-4.5c1.5-0.4,3.3-2.7,3.5-4.4c1.4-10.4,2.7-20.8,7.5-30.3c1.8-3.5,3.9-6.8,6-10.4   c-8.1-1.6-15.9-2.8-23.6-4.7c-35.5-9-64.8-26.8-81.8-60.6c-6.6-13.2-10.3-27.4-10.8-42.2c-0.8-22.8-0.5-45.7,4.1-68.2   c3.3-15.8,9.3-30.5,21.3-41.9c2.6-2.5,3.1-4.7,1.7-8.5c-6.7-18.7-7.4-37.7-1.7-56.8c1.2-4.1,2.3-8.2,3.5-12.5   c27.4,5.2,43.7,23.7,59,44.2c15.8-11.7,34.5-12.7,52.7-13.9c21.6-1.4,43.3-1.1,64.8,2.4c11.2,1.8,18.1,4.1,29,10.6   c9.4-9.7,18.2-19.5,27.9-28.4c7.7-7.1,17.3-11.6,27.7-14c2.9-0.7,4.4-0.4,5.6,2.8c8.1,22.1,9.3,44.1,0.4,66.2   c-1.2,3-1.1,5.1,1.4,7.5c14.4,13.7,21,31.4,23.2,50.5c2,17.7,3.1,35.5,3.1,53.3c0,25.3-7.5,48.5-23.4,68.4   c-11.2,14.1-25.7,24.2-42.1,31.8c-15.9,7.3-32.5,11.5-49.7,13.7c-0.4,0.1-0.8,0.4-1.5,0.7c11.8,16.9,13.7,35.9,13.5,55.6   c-0.3,28.7-0.2,57.3,0,86c0,4.5-1.3,5.6-5.7,5.6c-35.5-0.2-71-0.2-106.5,0c-4.4,0-5.8-1.4-5.8-5.7c0.2-15.5,0.1-31,0.1-46.5   C218.7,449.9,218.7,447.9,218.7,445.5z"/></g>
-            </svg>
-            <p>matheuscmorais356</p>
-          </div>
+        
         </div>
       </header>
       <div class="content">
+        <h2>Envie uma mensagem</h2>
         <form action="https://formsubmit.co/matheuscmorais356@gmail.com" method="POST">
           <input type="hidden" name="_next" value="http://127.0.0.1:5500/index.html">
           <input type="hidden" name="_captcha" value="false">
 
           <div class="input_field">
-            <input type="email" name="email" placeholder="E-mail">
+            <input required type="email" id="email" name="email" placeholder="E-mail">
             <label for="email">E-mail</label>
           </div>
           <div class="input_field">
-            <input type="text" name="subject" placeholder="Assunto">
+            <input required type="text" id="subject" name="subject" placeholder="Assunto">
             <label for="subject">Assunto</label>
           </div>
           <div class="input_field">
-            <input type="textarea" name="menssage" placeholder="Mensagem">
+            <textarea required name="message"  id="message" cols="30" rows="10"></textarea>
             <label for="message">Mensagem</label>
           </div>
           <div class="button_form">
