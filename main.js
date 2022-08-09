@@ -11,17 +11,17 @@ const projects = [
     name: 'SingupForm',
     image: './assets/singupForm.PNG',
     alt: 'Imagem do projeto SingupFrom',
-    description: 'Esta é a solução para o desafio do Frontend Mentor. O objetivo do projeto é fazera validação do formulario.',
+    description: 'Esta é a solução para o desafio do Frontend Mentor. O objetivo do projeto é fazer a validação do formulario.',
     technologies: ['JS', 'HTML', 'CSS'],
     link: 'https://matheuscmorais356.github.io/SignupForm/'
   },
   {
-    name: 'FAQ',
-    image: './assets/faq.png',
-    alt: 'Imagem do projeto FAQ',
-    description: 'Esse é um projeto desenvolvido durante a Mapa Dev Week do Dev em Dobro.',
+    name: 'Calculadora',
+    image: './assets/calculadora.jpg',
+    alt: 'Imagem do projeto Calculadora',
+    description: 'O objetivo era criar uma calculadora',
     technologies: ['JS', 'HTML', 'CSS'],
-    link: 'https://matheuscmorais356.github.io/FAQ/'
+    link: 'https://matheuscmorais356.github.io/Calculadora/'
   },
   {
     name: 'SummaryCard',
