@@ -1,7 +1,7 @@
 * {
-  margin: 0;
-  padding: 0;
   box-sizing: border-box;
+  padding: 0;
+  margin: 0;
   text-decoration: none;
 }
 
@@ -33,15 +33,14 @@ html {
 
 html,
 body {
-  width: 100%;
   height: 100%;
+  width: 100%;
 }
 
 body {
   font-family: 'Roboto Mono', monospace;
   font-size: 1.6rem;
   text-align: center;
-
   color: var(--white);
 }  
 
@@ -138,6 +137,17 @@ svg {
 .technologies .pill_Python {
   border: solid .1rem var(--color-python);
   color: var(--color-python);
+}
+
+/* keyframes */
+
+@keyframes blink {
+  0%, 100% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0;
+  }
 }
 
 
@@ -254,13 +264,20 @@ svg {
   text-align: left;
 }
 
-#home header .apresentation h1 {
+#home .apresentation h1 {
   font-size: 3.4rem;
   padding-right: 1rem;
   color: var(--primary-color);
 }
 
-#home header .apresentation h3 {
+#home .apresentation h1::after {
+  content: '|';
+  margin-left: .5rem;
+  opacity:  1;
+  animation: blink .7s infinite;
+}
+
+#home .apresentation h3 {
   font-size: 3rem;
 }
 

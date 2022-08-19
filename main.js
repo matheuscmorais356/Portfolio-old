@@ -34,6 +34,21 @@ const projects = [
 ]
 const formButtom = document.querySelector('.button_form > button')
 
+// Efeitto de digitação
+function typeWriter() {
+  const text = document.querySelector('.apresentation h1')
+  const characters = text.innerHTML.split('')
+  text.innerHTML = ''
+
+  characters.forEach((character, i) => {
+
+    setTimeout(() => text.innerHTML += character, 100 * i)
+
+  })
+  
+}
+
+
 // Menu
 
 function openMenu() {
