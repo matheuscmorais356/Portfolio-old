@@ -117,6 +117,12 @@
 
   #about .content .about_image {
     height: 30rem;
+    border-radius: 1rem;    
+  }
+
+  #about .content .about_image img {
+    border: 2px solid var(--primary-color);
+    border-radius: 1rem;
   }
 
   #about  .description .footer_description {
