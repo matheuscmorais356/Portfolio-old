@@ -42,7 +42,7 @@ function typeWriter() {
 
   characters.forEach((character, i) => {
 
-    setTimeout(() => text.innerHTML += character, 100 * i)
+    setTimeout(() => text.innerHTML += character, 75 * i)
 
   })
   
@@ -151,7 +151,6 @@ ScrollReveal({
   distance: '30px',
   duration: 500,
 }).reveal (`
-  #home .wrapper,
   #about .wrapper,
   #projects .wrapper,
   #contact .wrapper

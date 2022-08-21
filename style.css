@@ -66,6 +66,7 @@ section {
 
 .wrapper .content {
   margin-top: 3rem;
+
 }
 
 ul {
@@ -351,6 +352,8 @@ svg {
 #about .wrapper .content {
   display: flex;
   justify-content: center;
+  align-items: center;
+  height: 100%;
 
   gap: 2.5rem;
   padding: 2.5rem;
@@ -367,11 +370,6 @@ svg {
 #about .content .about_image img {
   border-radius: 0 1rem 1rem 0;
   border-left: .5rem solid var(--primary-color);
-  transition: transform .2s 
-}
-
-#about .content .about_image img:hover {
-  transform: scale(1.1);
 }
 
 #about .content .description {
