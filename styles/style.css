@@ -19,6 +19,7 @@
   --color-html:hsl(18, 88%, 55%); 
   --color-css: hsl(198, 71%, 53%);
   --color-python: hsl(206, 59%, 59%);
+  --color-git: hsl(0, 100%, 50%);
   
   --white: #fff;
   --black: #000;
@@ -138,6 +139,11 @@ svg {
 .technologies .pill_Python {
   border: solid .1rem var(--color-python);
   color: var(--color-python);
+}
+
+.technologies .pill_Git {
+  border: solid .1rem var(--color-git);
+  color: var(--color-git);
 }
 
 /* keyframes */
