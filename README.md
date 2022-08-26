@@ -4,7 +4,7 @@
 
 ### 🔗 Links
 
-- URL do site no ar: [Clique aqui!](https://matheuscmorais356.github.io/portifolio/)
+- URL do site no ar: [Clique aqui!](https://matheuscmorais356.github.io/Portfolio/)
 
 ### 🛠 Tecnologias
 
@@ -16,6 +16,7 @@ As seguintes ferramentas foram usadas na construção do projeto:
 
 ### Autor
 ---
+
 <div style="margin-bottom: 10px; display: flex; flex-direction: column;">
   <img style="border-radius: 50%" src="./assets/myPhoto.jpg" width="100px;" alt="Foto Matheus Cardoso Morais"/>
   <sub><b>Matheus Cardoso Morais</b></sub>
