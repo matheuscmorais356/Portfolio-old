@@ -4,7 +4,7 @@
 
 ### 🔗 Links
 
-- URL do site no ar: [Clique aqui!](https://matheuscmorais356.github.io/portifolio/)
+- URL do site no ar: [Clique aqui!](https://matheuscmorais356.github.io/Portfolio/)
 
 ### 🛠 Tecnologias
 
