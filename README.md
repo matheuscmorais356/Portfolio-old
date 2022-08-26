@@ -16,7 +16,7 @@ As seguintes ferramentas foram usadas na construção do projeto:
 
 ### Autor
 ---
-<div style="padding-bottom: 10px; display: flex; flex-direction: column;">
+<div style="padding-bottom: 10px;">
   <img style="border-radius: 50%;" src="./assets/myPhoto.jpg" width="100px;" alt="Foto Matheus Cardoso Morais" />
   <sub><b>Matheus Cardoso Morais</b></sub>
 </div>
