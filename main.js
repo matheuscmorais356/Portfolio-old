@@ -9,7 +9,7 @@ const projects = [
   },
   {
     name: 'SingupForm',
-    image: './assets/singupForm.png',
+    image: './assets/singupForm.PNG',
     alt: 'Imagem do projeto SingupFrom',
     description: 'Esta é a solução para o desafio do Frontend Mentor. O objetivo do projeto é fazer a validação do formulario.',
     technologies: ['JS', 'HTML', 'CSS'],
@@ -17,7 +17,7 @@ const projects = [
   },
   {
     name: 'Calculadora',
-    image: './assets/calculadora.jpg',
+    image: './assets/calculadora.JPG',
     alt: 'Imagem do projeto Calculadora',
     description: 'O objetivo era criar uma calculadora',
     technologies: ['JS', 'HTML', 'CSS'],

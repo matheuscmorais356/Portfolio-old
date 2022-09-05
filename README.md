@@ -18,13 +18,7 @@ As seguintes ferramentas foram usadas na construção do projeto:
 ### Autor
 ---
 
-<img src="./assets/myPhoto.jpg" width="150px" height="150px" style="border-radius: 50%;"/>
-<br/>
-<sub><strong>Matheus Cardoso Morais</strong></sub>
-<br/>
-<br/>
-
-Feito por Matheus Cardoso 👋🏽 Entre em contato!
+Feito por Matheus Cardoso Morais 👋🏽 Entre em contato!
 
 [![Linkedin Badge](https://img.shields.io/badge/-matheus-blue?style=flat-square&logo=Linkedin&logoColor=white&link=https://www.linkedin.com/in/matheus-cmorais356/)](https://www.linkedin.com/in/matheus-cmorais356/) 
 [![Gmail Badge](https://img.shields.io/badge/-matheuscmorais356@gmail.com-c14438?style=flat-square&logo=Gmail&logoColor=white&link=mailto:matheuscmorais356@gmail.com)](mailto:matheuscmorais356@gmail.com)

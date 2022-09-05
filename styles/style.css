@@ -443,26 +443,33 @@ svg {
   background: transparent;
   border: .2rem solid var(--primary-color);
   border-radius: 1.5rem;
-  color: var(--white);
-  font-weight: 700;
-  font-size: 1.8rem;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  gap: 1rem;
   transition: background .2s ease-in-out;
 }
 
-#about .description .footer_description button svg {
+#about  .description .footer_description button a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+  color: var(--white);
+  font-weight: 700;
+  font-size: 1.8rem;
+}
+
+#about .description .footer_description a svg {
   width: 3rem;
 }
 
 #about .description .footer_description button:hover {
   background: var(--primary-color);
+}
+
+#about .description .footer_description button:hover a {
   color: var(--black);
 }
 
-#about .description .footer_description button:hover svg path[fill="#fff"] {
+
+#about .description .footer_description button:hover a svg path[fill="#fff"] {
   fill: var(--black);
 }
 
