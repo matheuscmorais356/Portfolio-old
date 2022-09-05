@@ -18,11 +18,10 @@ As seguintes ferramentas foram usadas na construção do projeto:
 ### Autor
 ---
 
-<img src="./assets/myPhoto.jpg" width="150px" height="150px" style="border-radius: 50%;"/>
-<br/>
-<sub><strong>Matheus Cardoso Morais</strong></sub>
-<br/>
-<br/>
+<div style="display:flex;flex-direction:column;gap:5px;margin-bottom:10px;">
+  <img src="./assets/myPhoto.jpg" width="150px" height="150px" style="border-radius: 50%"/>
+  <sub><strong>Matheus Cardoso Morais</strong></sub>
+</div>
 
 Feito por Matheus Cardoso 👋🏽 Entre em contato!
 
