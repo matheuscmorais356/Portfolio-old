@@ -18,11 +18,6 @@ As seguintes ferramentas foram usadas na construção do projeto:
 ### Autor
 ---
 
-<div style="display:flex;flex-direction:column;gap:5px;margin-bottom:10px;">
-  <img src="./assets/myPhoto.jpg" width="150px" height="150px" style="border-radius: 50%"/>
-  <sub><strong>Matheus Cardoso Morais</strong></sub>
-</div>
-
 Feito por Matheus Cardoso 👋🏽 Entre em contato!
 
 [![Linkedin Badge](https://img.shields.io/badge/-matheus-blue?style=flat-square&logo=Linkedin&logoColor=white&link=https://www.linkedin.com/in/matheus-cmorais356/)](https://www.linkedin.com/in/matheus-cmorais356/) 
