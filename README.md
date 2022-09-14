@@ -1,6 +1,6 @@
 <h1 align="center">Meu Portifólio</h1>
 
-<img src="./assets/portfolio.jpg" alt="portfolio">
+<img src="./src/portfolio.jpg" alt="portfolio">
 
 ### 🔗 Links
 
@@ -13,7 +13,7 @@ As seguintes ferramentas foram usadas na construção do projeto:
 - HTML
 - CSS
 - JavaScript
-- [ScrollReveal](https://scrollrevealjs.org/) : ScrollReveal é uma blibioteca JavaScrip para animar elementos à medida que eles aparecem na tela
+- [ScrollReveal](https://scrollrevealjs.org/)
 
 ### Autor
 ---

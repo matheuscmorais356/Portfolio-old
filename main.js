@@ -16,6 +16,22 @@ const projects = [
     link: 'https://matheuscmorais356.github.io/SignupForm/'
   },
   {
+    name: 'DoctorCare',
+    image: './assets/doctorCare.JPG',
+    alt: 'Imagem do projeto DoctorCare',
+    description: 'Projeto desenvolvido durante a NLW #08 da Rocketseat',
+    technologies: ['JS', 'HTML', 'CSS'],
+    link: 'https://matheuscmorais356.github.io/DoctorCare/'
+  },
+  {
+    name: 'FAQ',
+    image: './assets/faq.png',
+    alt: 'Imagem do projeto FAQ',
+    description: 'Projeto desenvolvido durante a Mapa Dev Week do Dev em Dobro',
+    technologies: ['JS', 'HTML', 'CSS'],
+    link: 'https://matheuscmorais356.github.io/FAQ/' 
+  },
+  {
     name: 'Calculadora',
     image: './assets/calculadora.JPG',
     alt: 'Imagem do projeto Calculadora',
