@@ -1,6 +1,6 @@
 <h1 align="center">Meu Portifólio</h1>
 
-<img src="./src/portfolio.jpg" alt="portfolio">
+<img src="./assets/portfolio.jpg" alt="portfolio">
 
 ### 🔗 Links
 
