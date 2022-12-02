@@ -40,6 +40,14 @@ const projects = [
     link: 'https://matheuscmorais356.github.io/Calculadora/'
   },
   {
+    name: 'Relógio Digital',
+    image: './assets/relogioDigital.JPG',
+    alt: 'Imagem do projeto Relógio Digital',
+    description: 'O objetivo era criar relógio digital para treinar a manipulação de data e hora',
+    technologies: ['JS', 'HTML', 'CSS'],
+    link: 'https://matheuscmorais356.github.io/relogioDigital/'
+  },
+  {
     name: 'SummaryCard',
     image: './assets/summaryCard.png',
     alt: 'Imagem do projeto SummaryCard',

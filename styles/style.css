@@ -18,8 +18,9 @@
   --color-js:hsl(53, 93%, 54%);
   --color-html:hsl(18, 88%, 55%); 
   --color-css: hsl(198, 71%, 53%);
-  --color-python: hsl(206, 59%, 59%);
+  --color-python: hsl(59, 84%, 54%);
   --color-git: hsl(0, 100%, 50%);
+  --color-react: hsl(226, 100%, 50%);
   
   --white: #fff;
   --black: #000;
@@ -117,8 +118,8 @@ svg {
 .technologies > p{
   padding: 1rem;
   border-radius: 1.5rem;
-  color: black;
   font-weight: 700;
+  cursor: pointer;
 }
 
 .technologies .pill_JS{
@@ -144,6 +145,11 @@ svg {
 .technologies .pill_Git {
   border: solid .1rem var(--color-git);
   color: var(--color-git);
+}
+
+.technologies .pill_React {
+  border: solid .1rem var(--color-react);
+  color: var(--color-react);
 }
 
 /* keyframes */
