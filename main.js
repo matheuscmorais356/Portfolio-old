@@ -1,61 +1,4 @@
-const projects = [
-  {
-    name: 'TipCalculate',
-    image: './assets/tipCalculator.jpg',
-    alt: 'Imagem do projeto TipCalculate',
-    description: 'Esta é a solução para o desafio do Frontend Mentor. O desafio foi criar uma calculadora de gorjeta.',
-    technologies: ['JS', 'HTML', 'CSS'],
-    link: 'https://matheuscmorais356.github.io/TipCalculator/'
-  },
-  {
-    name: 'SingupForm',
-    image: './assets/singupForm.PNG',
-    alt: 'Imagem do projeto SingupFrom',
-    description: 'Esta é a solução para o desafio do Frontend Mentor. O objetivo do projeto é fazer a validação do formulario.',
-    technologies: ['JS', 'HTML', 'CSS'],
-    link: 'https://matheuscmorais356.github.io/SignupForm/'
-  },
-  {
-    name: 'DoctorCare',
-    image: './assets/doctorCare.JPG',
-    alt: 'Imagem do projeto DoctorCare',
-    description: 'Projeto desenvolvido durante a NLW #08 da Rocketseat',
-    technologies: ['JS', 'HTML', 'CSS'],
-    link: 'https://matheuscmorais356.github.io/DoctorCare/'
-  },
-  {
-    name: 'FAQ',
-    image: './assets/faq.png',
-    alt: 'Imagem do projeto FAQ',
-    description: 'Projeto desenvolvido durante a Mapa Dev Week do Dev em Dobro',
-    technologies: ['JS', 'HTML', 'CSS'],
-    link: 'https://matheuscmorais356.github.io/FAQ/' 
-  },
-  {
-    name: 'Calculadora',
-    image: './assets/calculadora.JPG',
-    alt: 'Imagem do projeto Calculadora',
-    description: 'O objetivo era criar uma calculadora',
-    technologies: ['JS', 'HTML', 'CSS'],
-    link: 'https://matheuscmorais356.github.io/Calculadora/'
-  },
-  {
-    name: 'Relógio Digital',
-    image: './assets/relogioDigital.JPG',
-    alt: 'Imagem do projeto Relógio Digital',
-    description: 'O objetivo era criar relógio digital para treinar a manipulação de data e hora',
-    technologies: ['JS', 'HTML', 'CSS'],
-    link: 'https://matheuscmorais356.github.io/relogioDigital/'
-  },
-  {
-    name: 'SummaryCard',
-    image: './assets/summaryCard.png',
-    alt: 'Imagem do projeto SummaryCard',
-    description: 'Esta é uma solução para o desafio do cartão de resumo do pedido no Frontend Mentor.',
-    technologies: ['JS', 'HTML', 'CSS'],
-    link: 'https://matheuscmorais356.github.io/summaryCard/'
-  },
-]
+
 const formButtom = document.querySelector('.button_form > button')
 
 // Efeitto de digitação
@@ -69,7 +12,6 @@ function typeWriter() {
     setTimeout(() => text.innerHTML += character, 75 * i)
 
   })
-  
 }
 
 
@@ -102,10 +44,11 @@ function showBackToTopButton() {
 
 // Projects cards
 
-projects.forEach((project) => {
-
-  createProjectCard(project)
-})
+fetch('./data/projects.json')
+  .then((response) => response.json())
+  .then((data) => data.projects.forEach((project) => {
+    createProjectCard(project)
+  }))
 
 function createProjectCard(project) {
   const content = document.querySelector('#projects .content')

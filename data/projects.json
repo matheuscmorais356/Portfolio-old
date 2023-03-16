@@ -1,0 +1,44 @@
+{
+  "projects": [
+    {
+    "name": "Mini Blog",
+    "image": "./assets/miniBlog.png",
+    "alt": "Imagem do projeto Mini Blog",
+    "description": "O objetivo do projeto era fazer um blog onde seria possível criar usuários, fazer a autenticação, controle de sessão, fazer postagens e o gerenciamento de posts podendo apagar e editar. Tudo isso conectado com o Firebase",
+    "technologies": ["React", "JS", "HTML", "CSS"],
+    "link": "https://mini-blog-kohl.vercel.app/"
+    },
+    {
+    "name": "Secret Word",
+    "image": "./assets/secretword.png",
+    "alt": "Imagem do projeto Secret Word",
+    "description": "O objeivo foi fazer um jogo de adivinhar a palavra.",
+    "technologies": ["React", "JS", "HTML", "CSS"],
+    "link": "https://secret-word-chi.vercel.app/"
+    },
+    {
+    "name": "TipCalculate",
+    "image": "./assets/tipCalculator.jpg",
+    "alt": "Imagem do projeto TipCalculate",
+    "description": "Esta é a solução para o desafio do Frontend Mentor. O desafio foi criar uma calculadora de gorjeta.",
+    "technologies": ["JS", "HTML", "CSS"],
+    "link": "https://matheuscmorais356.github.io/TipCalculator/"
+    },
+    {
+    "name": "SingupForm",
+    "image": "./assets/singupForm.PNG",
+    "alt": "Imagem do projeto SingupFrom",
+    "description": "Esta é a solução para o desafio do Frontend Mentor. O objetivo do projeto é fazer a validação do formulario.",
+    "technologies": ["JS", "HTML", "CSS"],
+    "link": "https://matheuscmorais356.github.io/SignupForm/"
+    },
+    {
+    "name": "DoctorCare",
+    "image": "./assets/doctorCare.JPG",
+    "alt": "Imagem do projeto DoctorCare",
+    "description": "Projeto desenvolvido durante a NLW #08 da Rocketseat",
+    "technologies": ["JS", "HTML", "CSS"],
+    "link": "https://matheuscmorais356.github.io/DoctorCare/"
+    }
+  ]
+}
