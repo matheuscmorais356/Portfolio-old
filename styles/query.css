@@ -183,6 +183,16 @@
 
 }
 
+@media (max-width: 1000px) {
+  #projects .card_project .project_description > p {
+    font-size: 1.4rem;
+  }
+
+  #projects .card_project .project_description h4 {
+    font-size: 1.6rem;
+  }
+}
+
 @media (max-width: 700px) {
 
   #home header .apresentation h3 {
@@ -200,6 +210,17 @@
   #about .description .footer_description {
     align-items: start;
     gap: 2.5rem;
+  }
+
+  #projects .wrapper .content {
+    overflow-x: overlay;
+    flex-wrap: nowrap;
+    justify-content: flex-start;
+  }
+
+  #projects .wrapper .content .card_project {
+    min-width: 80%;
+    min-height: 100%;
   }
 }
 
@@ -219,12 +240,9 @@
     background: transparent;
   }
 
-  #projects .card_project .project_description p {
-    font-size: 1.4rem;
-  }
-
-  #projects .card_project .project_description h4 {
-    font-size: 1.6rem;
+  #projects .wrapper .content .card_project {
+    min-width: 100%;
+    max-height: 100%;
   }
 
   #contact .wrapper {

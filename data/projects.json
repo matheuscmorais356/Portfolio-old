@@ -9,6 +9,14 @@
     "link": "https://mini-blog-kohl.vercel.app/"
     },
     {
+    "name": "React Movies",
+    "image": "./assets/reactMovies.png",
+    "alt": "Imagem do projeto React Movies",
+    "description": "O objetivo foi criar um site de filmes consumindo a API do TMDB.",
+    "technologies": ["React", "JS", "HTML", "CSS"],
+    "link": "https://react-movies-ebon.vercel.app/"
+    },
+    {
     "name": "Secret Word",
     "image": "./assets/secretword.png",
     "alt": "Imagem do projeto Secret Word",
