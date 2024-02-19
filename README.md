@@ -1,4 +1,4 @@
-<h1 align="center">Meu Portifólio</h1>
+<h1 align="center">Meu Portfólio</h1>
 
 <img src="./assets/portfolio.jpg" alt="portfolio">
 
